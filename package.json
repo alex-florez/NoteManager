@@ -1,0 +1,19 @@
+{
+  "name": "notemanager",
+  "version": "1.0.0",
+  "description": "App for notes management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-florez/NoteManager.git"
+  },
+  "author": "Alex Florez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-florez/NoteManager/issues"
+  },
+  "homepage": "https://github.com/alex-florez/NoteManager#readme"
+}
