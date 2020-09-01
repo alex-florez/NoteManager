@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:  tan;
+}
+
+.form-input {
+    background-color: wheat;
+    border-style: outset;
+    padding: 8px;
+    display: flex;
+    margin: 6px 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 3;
+}
+
+.form-submit {
+    margin-top: 16px
+}
+
+.login-form {
+    background-color: palegoldenrod;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+input {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    margin-left: 8px;
+}
+
