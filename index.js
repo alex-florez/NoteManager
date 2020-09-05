@@ -15,8 +15,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+// Servicios
+var userService = require("./services/userService.js");
+userService.init(require("./persistence/userRepository.js"));
+
 // Controladores
-require("./controllers/userController.js")(app, swig);
+require("./controllers/userController.js")(app, swig, userService);
+
 
 // Routers
 var sessionRouter = express.Router();
@@ -29,11 +34,11 @@ sessionRouter.use(function(req, res, next) {
     
 });
 
-app.use("/", sessionRouter);
+app.use("/home", sessionRouter);
 
 // Ruta base
 app.get("/", (req, res) => {
-    res.send(swig.renderFile("views/home.html"));
+    res.redirect("/home");
 });
 
 app.listen(3000, function() {
